@@ -23,6 +23,48 @@ Workflow: load → inspect missing values → drop incomplete rows and email ID 
 separate features/target → scale features → split 70/30 → train KNN and SVM →
 compare accuracy and confusion matrices.
 
+
+1. K-Nearest Neighbors (KNN)
+KNN is a Machine Learning algorithm that predicts the category of new data by looking at its nearest similar data points.
+
+In simple words, it looks at what the majority of similar examples are and makes a decision.
+
+Example: Email Spam Detection
+
+Suppose a new email arrives. KNN checks 5 similar emails:
+- 3 are Spam.
+- 2 are Not Spam.
+Since Spam has the majority, KNN classifies the new email as Spam.
+
+Remember:
+- K = Number of neighbours.
+- Nearest Neighbors = Most similar data points.
+- Classification = Deciding the category.
+2. Support Vector Machine (SVM)
+SVM is a Machine Learning algorithm that classifies data by finding the best boundary between two categories.
+
+In simple words, it creates a dividing line between two groups and uses that line to classify new data.
+
+Example: Email Spam Detection
+
+Suppose we have two groups:
+- Spam emails.
+- Not Spam emails.
+SVM finds the best possible boundary to separate these two groups.
+
+When a new email arrives, it checks which side of the boundary the email belongs to and classifies it accordingly.
+
+Remember:
+- SVM = Finds the best separating boundary.
+- Hyperplane = The dividing boundary.
+- Classification = Deciding the category.
+
+Main difference
+KNN	SVM
+Checks nearest similar data points.	Finds the best separating boundary.
+Uses majority voting.	Uses a decision boundary.
+Example: 3 out of 5 neighbours are Spam.	Example: Email falls on the Spam side.
+
 ## Important code
 
 ### 1. Prepare features and target
