@@ -1,0 +1,27 @@
+**Assignment 3 – Smart Contract for Bank Account (Remix IDE)**
+
+1. Open https://remix.ethereum.org.
+2. Create a new workspace named `contracts`.
+3. Create a Solidity file named `contract.sol`.
+4. Paste the smart contract code into the file.
+5. Open Solidity Compiler and select version `0.4.26`.
+6. Click **Compile contract.sol**.
+7. Open **Deploy & Run Transactions**.
+8. Select **Remix VM** environment and Account 1.
+9. Set Value to `0 Wei` and click **Deploy**.
+10. Expand `MyContract` under Deployed Contracts.
+
+**Execute the following functions:**
+
+11. **getOwner():** Click the function to display the owner's address.
+12. **getbalance():** Click the function to display the owner's wallet balance.
+13. **deposit():** Enter `2` in the Value field, select `Ether`, and click `deposit()`. Exactly 2 ETH will be deposited into the contract.
+14. **withdraw():** Change Value to `0 Wei`, select Account 1 (owner), and click `withdraw()`. The deposited ETH will be transferred back to the owner.
+15. **Test security:** Select Account 2 and click `withdraw()`. The transaction should fail because only the owner can withdraw.
+
+**Important:**
+- Deploy = 0 Wei
+- getOwner() = 0 Wei
+- getbalance() = 0 Wei
+- deposit() = 2 Ether
+- withdraw() = 0 Wei
